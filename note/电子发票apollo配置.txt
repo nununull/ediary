@@ -1,0 +1,21 @@
+【系统业务配置】
+UAT:
+electronic_invoice_bill_url = https://ei.szhtxx.cn/dzfpTest/kp
+electronic_invoice_stock_query_url = https://ei.szhtxx.cn/dzfpTest/kc
+electronic_invoice_bill_batch_url = https://ei.szhtxx.cn/dzfpTest/batchKp
+electronic_invoice_bill_batch_query_url = https://ei.szhtxx.cn/dzfpTest/batchRes
+electronic_invoice_bill_invoice_pay_url = https://ei.szhtxx.cn/dzfpTest/invoicePay
+
+electronic_invoice_password = 37428363537qQPqsudtY0TYwFkOM3+Pg==
+invoice_address_phone = 广东省深圳市福田区商报路7号天健创业大厦 0755-83668526
+electronic_invoice_bill_man = 莫萍萍
+electronic_invoice_payee_man = 王会
+electronic_invoice_review_man = 李敏锋
+
+PRO:
+electronic_invoice_bill_url = https://ei.szhtxx.cn/dzfpTest/kp
+electronic_invoice_stock_query_url = https://ei.szhtxx.cn/dzfpTest/kc
+electronic_invoice_bill_batch_url = https://ei.szhtxx.cn/dzfpTest/batchKp
+electronic_invoice_bill_batch_query_url = https://ei.szhtxx.cn/dzfpTest/batchRes
+electronic_invoice_bill_invoice_pay_url = https://ei.szhtxx.cn/dzfpTest/invoicePay
+

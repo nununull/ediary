@@ -1,0 +1,9 @@
+json:
+"https://ei.szhtxx.cn/dzfpTest/kp";//开具接口
+"https://ei.szhtxx.cn/dzfpTest/kc";//库存查询
+"https://ei.szhtxx.cn/dzfpTest/weChat";//微信卡包
+"https://ei.szhtxx.cn/dzfpTest/batchKp";//批量开具
+"https://ei.szhtxx.cn/dzfpTest/batchRes";//批量查询
+"https://ei.szhtxx.cn/dzfpTest/invoicePay";//发票交付
+XML的测试地址
+http://ei.szhtxx.com:9001/front/request/4458

@@ -1,0 +1,138 @@
+
+--业务配置
+命名空间：cn.lcsc.s.dev.finance 
+-- 民生银行大小额汇路临界值
+SYSTEM.FINANCE.cmbc_local_flag_pay_money=50000
+-- 民生银行大小额汇路临界值校验开关 打开不校验 周六周日限制
+SYSTEM.FINANCE.cmbc_local_flag_pay_money_nockeck_open=yes
+-- 民生转账是否查询余额
+SYSTEM.FINANCE.is_query_balance_before_cmbc_payment=no
+-- 民生对公打款资金账户id
+SYSTEM.FINANCE.cmbc_payment_financing_account_id=224
+--顺丰电子运单开票金额分界线
+SYSTEM.FINANCE.submit_sf_avt_money_distinct=500
+
+命名空间：cn.lcsc.s.dev.invoice
+-- 开票收款人
+invoice_payee = 深圳市立创电子商务有限公司
+-- 开票销方税号
+invoice_sellertax = szlc
+-- 开票销方银行账号
+invoice_sellerbnkno = 民生银行对公账号
+-- 航信开票税率
+invoice_taxrate = 0.17
+-- 是否开启增值税发票电子运单第三方支付
+invoice_open_avt_pay_by_other=yes
+-- 增值税发票 寄方信息 (寄方省份,寄方城市,寄方公司名称,寄方联系人,寄方联系电话,寄方联系地址)
+invoice_sf_order_service_j_avt_details=广东省,深圳市,立创商城,王会,0755-83668526,福田区商报路7号天健创业大厦
+
+--项目项目配置
+命名空间：project
+-- 民生客户操作信息
+cmbc_payment_operator_config=567567567,567567567
+-- 民生帐号信息
+cmbc_payment_account_config=547567567567,深圳市立创电子商务有限公司
+-- 民生地址
+cmbc_payment_post_url=http://192.168.11.197:9394/eweb/b2e/connect.do
+temp_file_path=
+--顺丰月结账号 2000 元以下 信息 >> 月结账号，密钥，客户编号
+sf_order_service_avt_standard_partnerInfo=564564564565,8978978978978978,789789789643534
+-- 快递测试开关
+express_test_switch=on
+-- 顺丰接口
+sf_order_service_url=http://bsp-ois.sf-express.com/bsp-ois/ws/expressService
+-- 申通帐号信息
+st_order_service_avt_specialoffers_partnerInfo=4f1f45c9bac53aec421e420d8d496c7c,0071,立创电子,广东深圳福田
+-- 申通接口
+st_order_service_url=http://vip.sto.cn/PreviewInterfaceAction.action
+-- 顺丰月结账号 2000 元以上 信息 >> 月结账号，密钥，客户编号
+sf_order_service_avt_specialoffers_partnerInfo=35346456754,54645645645645,4564564587686787
+
+invoice_express_printer=发票快递打印机:invoicest; 发票快递打印机:invoicesf
+
+-- lcsc-all-dictionary 字典项配置
+-- 添加命名空间
+命名空间：auth_manager
+
+值：
+袁江涛 = 袁江涛
+杨林杰 = 杨林杰
+超级管理员 = 超级管理员
+
+
+命名空间：auth_finance
+值：
+余春凤 = 余春凤
+王会 = 王会
+
+
+-- 付款申请类型
+命名空间：cn.lcsc.d.dev.payout_type
+
+supplier_loan = 供应商货款
+distribution = 铺货货款
+other = 其他支出
+daily = 日常开支
+refund = 退款
+withdraw_cash = 提现
+transfer = 转账支出
+
+-- 结算类型
+命名空间:cn.lcsc.d.dev.settle_type          
+
+order_refund = 订单退款
+cash_on_delivery = 货到付款
+delivery_against_payment = 款到发货
+other = 其它
+withdraw_cash = 提现
+cash = 现金
+month = 月结
+prepay = 预付全款
+deposit = 预付定金预付部分
+deposit_remain = 预付定金尾款部分
+biz = 预付业务费预付部分
+biz_remain = 预付业务费尾款部分
+spread = 代销结算
+owe = 挂欠结算
+no_send_product = 不发商品
+
+
+--税收分类编码
+名称：字典项配置
+
+命名空间：cn.lcsc.d.dev.tax_code 
+0101 = 1090519020000000000
+0102 = 1090519010000000000
+0103 = 1090519050000000000
+0104 = 1090515010000000000
+0105 = 1090515040000000000
+0106 = 1090519990000000000
+0111 = 1090519040000000000
+0113 = 1090519080000000000
+0115 = 1090518000000000000
+011704 = 1090519060000000000
+0118 = 1090519050000000000
+0120 = 1090521000000000000
+0122 = 1090514040000000000
+0124 = 1090519990000000000
+0126 = 1090516020000000000
+0128 = 1090519080000000000
+0130 = 1090519080000000000
+0132 = 1090518000000000000
+0133 = 1090518000000000000
+0134 = 1090519080000000000
+0136 = 1090520000000000000
+0137 = 1090518000000000000
+011705 = 1090521000000000000
+011706 = 1090519080000000000
+011707 = 1090519990000000000
+011708 = 1090518000000000000
+011709 = 1090519080000000000
+011710 = 1090518000000000000
+011711 = 1090519990000000000
+011712 = 1090519990000000000
+011713 = 1090521000000000000
+011714 = 1090518000000000000
+011715 = 1090519080000000000
+
+
